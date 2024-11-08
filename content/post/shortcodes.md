@@ -32,7 +32,7 @@ url: "demo/shortcodes.html"
 
 实际效果：
 
-{{< quote >}}
+{{ %< quote >% }}
 
 希望是无所谓有，无所谓无的，这正如地上的路。
 
@@ -41,7 +41,7 @@ url: "demo/shortcodes.html"
 
 **鲁迅**
 
-{{< /quote >}}
+{{ < /quote > }}
 
 ## 信息块
 
@@ -71,22 +71,22 @@ url: "demo/shortcodes.html"
   **Welcome** to [Hugo NexT!](https://preview.hugo-next.eu.org)
 {{< /note >}}
 
-{{< note info >}}
+{{ < note info > }}
   ### Info Header
   **Welcome** to [Hugo NexT!](https://preview.hugo-next.eu.org)
-{{< /note >}}
+{{ < /note > }}
 
-{{< note success >}}
+{{ < note success > }}
   ### Success Header
   **Welcome** to [Hugo NexT!](https://preview.hugo-next.eu.org)
-{{< /note >}}
+{{ < /note > }}
 
-{{< note warning >}}
+{{ < note warning > }}
   ### Warning Header
   **Welcome** to [Hugo NexT!](https://preview.hugo-next.eu.org)
-{{< /note >}}
+{{ < /note > }}
 
-{{< note danger >}}
+{{ < note danger > }}
   ### Danger Header
   **Welcome** to [Hugo NexT!](https://preview.hugo-next.eu.org)
-{{< /note >}}
+{{ < /note > }}

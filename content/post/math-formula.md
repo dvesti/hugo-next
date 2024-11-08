@@ -24,9 +24,9 @@ math: mathjax
 <!--more-->
 
 接下的示例中，将使用 [MathJax](https://www.mathjax.org/) 方案来展示渲染效果。
-
+```
 {{< note info >}}
-
+```
 - 使用 `hugo new` 命令创建一篇新的文章
 - 可以全局启用数据公式渲染，请在项目配置参数 `math: katex` 或 `math: mathjax`
 - 或是将该参数配置到需要显示数学公式的页面头部（减少不必要的加载消耗）

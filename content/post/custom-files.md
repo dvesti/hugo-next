@@ -33,11 +33,14 @@ customFilePath:
   style: /css/custom_style.css
 ```
 
-{{< note warning >}}
+
+{{ %< note warning >% }}
+
+
 
 **注意：** `sidebar` 和 `footer` 的文件命名不可以与它们的参数名称相同，不然会影响系统默认的布局设计，切记！！！ :smile:
 
-{{< /note >}}
+{{ < /note > }}
 
 然后在站点的根目录下创建 `layouts/partials` 2个目录，用于存放自定布局设计文件，另外在站点根目录下创建 `static/css` 2个目录，用于存放自定义 CSS 样式文件。一切就绪后，就可以参考如下的步骤，完成自己的设计想法。
 

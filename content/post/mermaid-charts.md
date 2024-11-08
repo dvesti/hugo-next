@@ -25,13 +25,15 @@ toc: true
 
 ## 使用说明
 
-{{< note info >}}
+
+{{ < note info > }}
+
 
 - 通过 `hugo new` 命令创建一篇新的文章
 - 在文章头部配置 `mermaid: true`
 - 使用短代码书写各种类型的图，自带2个参数： align（对齐） 和 bc（背景色），可参考如下使用示例
 
-{{< /note >}}
+{{ < /note > }}
 
 ## 流程图
 
@@ -45,13 +47,13 @@ graph TD;
 {{</* /mermaid */>}}
 ```
 
-{{< mermaid align="left" >}}
+{{ < mermaid align="left" > }}
 graph TD;
     A-->B;
     A-->C;
     B-->D;
     C-->D;
-{{< /mermaid >}}
+{{ < /mermaid > }}
 
 ## 时序图
 
@@ -71,7 +73,7 @@ sequenceDiagram
 {{</* /mermaid */>}}
 ```
 
-{{< mermaid bc="#eee" >}}
+{{ < mermaid bc="#eee" > }}
 sequenceDiagram
     participant Alice
     participant Bob
@@ -83,7 +85,7 @@ sequenceDiagram
     John-->>Alice: Great!
     John->>Bob: How about you?
     Bob-->>John: Jolly good!
-{{< /mermaid >}}
+{{ < /mermaid > }}
 
 ## 类图
 
@@ -105,7 +107,7 @@ Class01 : int gorilla
 Class08 <--> C2: Cool label
 {{</* /mermaid */>}}
 ```
-{{< mermaid >}}
+{{ < mermaid > }}
 classDiagram
 Class01 <|-- AveryLongClass : Cool
 Class03 *-- Class04
@@ -120,7 +122,7 @@ Class01 : size()
 Class01 : int chimp
 Class01 : int gorilla
 Class08 <--> C2: Cool label
-{{< /mermaid >}}
+{{ < /mermaid > }}
 
 ## 甘特图
 
@@ -138,7 +140,7 @@ Future task               :         des3, after des2, 5d
 Future task2               :         des4, after des3, 5d
 {{</* /mermaid */>}}
 ```
-{{< mermaid >}}
+{{ < mermaid > }}
 gantt
 dateFormat  YYYY-MM-DD
 title Adding GANTT diagram to mermaid
@@ -149,7 +151,7 @@ Completed task            :done,    des1, 2014-01-06,2014-01-08
 Active task               :active,  des2, 2014-01-09, 3d
 Future task               :         des3, after des2, 5d
 Future task2               :         des4, after des3, 5d
-{{< /mermaid >}}
+{{ < /mermaid > }}
 
 ## 实体关系图
 
@@ -161,12 +163,12 @@ erDiagram
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 {{</* /mermaid */>}}
 ```
-{{< mermaid >}}
+{{ < mermaid > }}
 erDiagram
     CUSTOMER ||--o{ ORDER : places
     ORDER ||--|{ LINE-ITEM : contains
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
-{{< /mermaid >}}
+{{ < /mermaid > }}
 
 ## 用户旅程
 
@@ -183,7 +185,7 @@ journey
       Sit down: 5: Me
 {{</* /mermaid */>}}
 ```
-{{< mermaid >}}
+{{ < mermaid > }}
 journey
     title My working day
     section Go to work
@@ -193,4 +195,4 @@ journey
     section Go home
       Go downstairs: 5: Me
       Sit down: 5: Me
-{{< /mermaid >}}
+{{ < /mermaid > }}
