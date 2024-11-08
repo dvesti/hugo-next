@@ -32,7 +32,7 @@ main:
     pre: thumbs-up
     weight: 3
   - identifier: archives
-    name: 归档
+    name: Архив
     pageref: /archives
     pre: archive
     weight: 4
