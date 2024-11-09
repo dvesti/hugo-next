@@ -12,7 +12,7 @@
 
 # 站点域名，比如： https://hugo-next.eu.org
 # Website domain, eg: https://hugo-next.eu.org
-baseURL: /
+baseURL: https://dvesti.github.io/hugo-next/
 # 站点标题
 # Website title
 title: Hugo NexT
@@ -21,14 +21,15 @@ title: Hugo NexT
 theme: hugo-theme-next
 # 站点默认的语言和代码
 # Default laguage & code for website
-defaultContentLanguage: zh-cn
-languageCode: zh-CN
+defaultContentLanguage: ru-ru #zh-cn
+languageCode: ru #zh-CN
 # 是否包含中文，日语，韩文
 # Whether contains Chinese, Japanese and Korean
 hasCJKLanguage: true
 # 每页显示文章数量
 # Display items per page
-paginate: 10
+pagination:
+  pagerSize: 10
 # 开启支持表情符号
 # Enable Emoji support
 enableEmoji: true
@@ -63,6 +64,8 @@ markup:
     # Recommand start at 2
     startLevel: 2
     endLevel: 4
+    
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]    
 
 # 站点文章导航文件
 # Site map of all articles
@@ -125,27 +128,27 @@ minify:
 menus:
   main:
     - identifier: home
-      name: 首页
+      name: Главная
       pageref: /
       pre: home
       weight: 1
     - identifier: about
-      name: 关于
+      name: О сайте
       pageref: /about.html
       pre: user
       weight: 2
     - identifier: flinks
-      name: 站点示例
+      name: Флинки
       pageref: /flinks.html
       pre: thumbs-up
       weight: 3
     - identifier: archives
-      name: 归档
+      name: Архив
       pageref: /archives
       pre: archive
       weight: 4
     - identifier: commonweal
-      name: 公益 404
+      name: 404
       url: /404.html
       pre: heartbeat
       weight: 5
